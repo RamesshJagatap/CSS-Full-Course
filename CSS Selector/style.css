@@ -1,0 +1,43 @@
+   
+
+   <!-- Universal Selector
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-family: serif;
+    color: rgb(49, 59, 67);
+    background-color: #aa9c9c;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 5px;
+}
+.newpara{
+    font-family: serif;
+    background-color: #aac28e;
+    padding: 10px;
+    margin: 20px 200px;
+    border-radius: 10px;
+    
+}
+#newpara2{
+    font-family: serif;
+    background-color: #c3df50;
+    margin: 20px 300px;
+    border: 5px solid rgb(129, 172, 118);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+ul li{
+    background-color: #d25757;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 20px 300px;
+    border-radius: 10px;
+}
+h2{
+    margin: 40px 100px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <style>
+
+        .container{
+            display: flex;
+           align-content: center ;
+           
+        }
+
+        /* THis is the long hand property */
+        .box{
+            
+            width: 400px;
+            height: 200px;
+            border: 3px;
+            border-style: dotted;
+            border-radius: 15px;
+            border-color: rgb(88, 91, 91);
+            background-color: #ad7878;
+
+        }
+        
+        /* This is the short hand property */
+        .box2{
+            width: 400px;
+            height: 200px;
+           border: 5px solid black ;
+           border-radius: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Long hand property</div>
+        <div class="box2">short Hand border propepties</div>
+    </div>
+</body>
+</html>

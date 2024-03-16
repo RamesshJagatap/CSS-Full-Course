@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+         
+         div{
+            margin: 20px 20px;
+            display: flex;
+            align-items: flex-start;
+
+         }
+         
+         /* color by name */
+        .box1{
+           color: red;
+           position: relative;
+           border: 2px solid black;
+           width: 300px;
+           height: 300px;
+           margin: 5px;
+        }
+
+        /* color by RGB */
+        .box2{
+            color: rgb(59, 116, 166);
+            border: 2px solid black;
+           width: 300px;
+           height: 300px;
+           margin: 5px;
+        }
+        /* Color by hex */
+        .box3{
+            color: #28ac28;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+
+        }
+
+        /* color by hsl */
+        .box4{
+            color: hsl(33, 82%, 50%);
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        /* COlor by RGBA value */
+        .box5{
+            color: rgba(21, 104, 187, 0.6);
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="box1">Colors by Name </div>
+        <div class="box2">COlors by RGB</div>
+        <div class="box3">Colors by hex</div>
+        <div class="box4">Colors by hsl</div>
+        <div class="box5">Color by rgba</div>
+    </div>
+</body>
+</html>

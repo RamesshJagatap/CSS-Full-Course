@@ -1,0 +1,72 @@
+/* Pusedo classes in CSS */
+*{
+    
+    
+   padding: 0;
+   margin: 0;
+    font-family: initial;
+}
+
+.card{
+    border: 5px solid black;
+   margin: 50px 200px;
+   padding: 40px;
+   border-radius: 20px;   
+    
+}
+.box:first-child{
+    background-color: #b99595;
+    padding: 50px;
+    border-radius: 10px;
+}
+.box:last-child{
+    background-color: #626361;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+
+.box:nth-child(3){
+    background-color: #a697be;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+
+
+/* Psudo elements */
+
+.box::first-line{
+    color: rgb(247, 24, 24);
+}
+.box::first-letter{
+    color: #e3df16;
+}
+
+a{ text-decoration: none;
+    background-color: #a1bd96;
+    padding: 5px 10px;
+    margin: 20px;
+}
+
+
+a:hover{
+    color: wheat;
+    background-color: rgb(82, 62, 62);
+}
+
+::selection{
+    color: rgb(219, 219, 147);
+    background-color: #626361;
+}
+ul{
+    background-color: #a697be;
+    margin: 50px 0px;
+} 
+ul::before{
+    content: "Use of before(Psudedo element selectore) " ;
+    
+}   
+ul::after{
+    content: "Use of after";
+}
