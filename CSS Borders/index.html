@@ -6,13 +6,23 @@
     <title>CSS Borders</title>
     <style>
 
+        *{
+            box-sizing: border-box;
+            
+        }
         .container{
             display: flex;
-           align-content: center ;
+           justify-content:space-around ;
+           background: #b88484;
+           height: 1000px;
+           width: 1000px;
+           /* margin: 60px; */
+
+           
            
         }
 
-        /* THis is the long hand property */
+        /* THis is the long hand property for borders*/
         .box{
             
             width: 400px;
@@ -25,7 +35,7 @@
 
         }
         
-        /* This is the short hand property */
+        /* This is the short hand property for borders*/
         .box2{
             width: 400px;
             height: 200px;
