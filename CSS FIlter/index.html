@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS filter</title>
+
+
+    <style>
+        .card{
+            display: flex;
+            justify-content:space-around;
+        }
+        .Hunter1{
+            filter: blur(1%);
+            filter: brightness(50%);
+            filter: hue-rotate(45deg);
+            filter: invert(75%);
+            /* filter: hue-rotate() brightness() blur();  This is short hand property for css filters */
+        }
+
+        .Hunter2{
+        border: 2x solid black;
+        filter: blur(2px);
+        filter: drop-shadow(2px 3px 4px red);
+        }
+    </style>
+
+
+  </head>
+  <body>
+
+    <h2>These are the CSS filter</h2>
+    <div class="card">
+      <img class="Hunter1"
+        src= "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/royal-enfield-select-model-rebel-blue-1668160495860.jpg?q=80"
+        alt="Hunter "
+        height="500px "
+        width="500px"
+      />
+
+      <img class="Hunter2"
+        src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/royal-enfield-select-model-rebel-blue-1668160495860.jpg?q=80"
+        alt="new"
+        height="500px"
+        width="500px"
+      />
+    </div>
+  </body>
+</html>
