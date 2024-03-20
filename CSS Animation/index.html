@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbeat Animation</title>
+    <style>
+        body {
+            animation: loveimg 2s ease-in-out 1s infinite alternate;
+        }
+
+        .heart {
+            height: 200px;
+            width: 200px;
+            border: none;
+            background-color: red;
+            margin: 200px auto;
+            transform: rotate(45deg);
+            box-shadow: 0px 0px 50px red;
+            cursor: pointer;
+        }
+
+        .heart::before {
+            top: -100px;
+            box-shadow: 0px 0px 50px red;
+        }
+
+        .heart::after {
+            left: -100px;
+            box-shadow: 0px 0px 50px red;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            height: 200px;
+            width: 200px;
+            border: none;
+            background-color: red;
+            position: absolute;
+            z-index: 1;
+            border-radius: 50%;
+        }
+
+        .heart>p {
+            position: absolute;
+            z-index: 2;
+            transform: rotate(-45deg);
+            font-size: 40px;
+            font-style: italic;
+            text-shadow: 5px 5px 5px pink;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: rotate(45deg) scale(1);
+            }
+
+            50% {
+                transform: rotate(45deg) scale(0.5);
+            }
+
+            100% {
+                transform: rotate(45deg) scale(1);
+            }
+
+        }
+
+        @keyframes loveimg {
+            0% {
+                background-image: url("https://static.vecteezy.com/system/resources/thumbnails/026/904/408/small/ai-generated-ai-generative-lovely-romantic-love-couple-together-with-heart-shape-background-landscape-vacation-wedding-relationship-vibe-graphic-art-photo.jpg");
+                background-size: cover;
+            }
+
+            50% {
+                background-image: url("https://c4.wallpaperflare.com/wallpaper/907/543/795/anime-animated-love-wallpaper-preview.jpg");
+                background-size: cover;
+            }
+
+            100% {
+                background-image: url("https://img.freepik.com/free-vector/hand-drawn-valentine-s-day-background_23-2149224316.jpg");
+                background-size: cover;
+            }
+
+        }
+
+        .heart:hover {
+            animation: heartbeat 0.5s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart">
+        <p>I Love You</p>
+    </div>
+</body>
+
+</html>
