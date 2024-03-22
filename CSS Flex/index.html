@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-
-        .container{
+        .container {
             background-color: #cd9696;
             height: 100vh;
             width: 100wh;
@@ -15,7 +15,7 @@
 
             /* Justify content used for horizoantally align */
 
-            justify-content: center;
+            /* justify-content: center; */
             /* justify-content:flex-start; */
             /* justify-content: space-around; */
             /* justify-content: space-around; */
@@ -24,18 +24,18 @@
 
             /* align item used for verixcally align */
 
-            align-items:last baseline ;
-            align-items: flex-start;
-            align-items: center;
-            align-items: center;
-           
+            /* align-items: last baseline; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* align-items: center; */
+
             /* flex-direction: row-reverse; */
             /* flex-direction: column; */
             /* flex-direction: column-reverse; */
-            flex-wrap: wrap; 
+            /* flex-wrap: wrap;  */
             /* flex-wrap: wrap-reverse; */
             align-content: center;
-            
+
 
             /* Short Hand */
             /* gap:row-gap: , column-gap; */
@@ -43,35 +43,86 @@
             /* flex-flow: row wrap; */
             /* flex-flow: column wrap; */
 
-            flex-grow: 1;
-            
 
+            /* By default order is 0 we can set size more than 0 to keep our item in place (higher) */
+            .item1 {
+                /* flex-shrink: 5; */
+                order: 0;
+            }
 
-        }
+            .item2 {
+                /* flex-grow: 2; */
+                /* order: 1; */
+                /* order: 6; */
+                align-self: flex-start;
+                
+            }
 
-        .item{
+            .item3 {
+                /* flex-grow: 2; */
+                /* order: 3; */
+                align-self: flex-end;
+               
+            }
+
+            .item4 {
+                /* flex-shrink: 5; */
+                /* order: 4; */
+                /* align-self: flex-start; */
+                align-self: center;
+            }
+
+            .item5 {
+                /* order: 5; */
+                align-self: flex-end;
+               
+               
+            }
+
+            /* By default order is 0 we can set size more than 0 to keep our item in place (higher) */
+
+            .order1{
+                order: 5;
+            }
+            .order2{
+                order: 4;
+
+            }
+            .order3{
+                order: 3;
+            }
+            .order4{
+                order: 2;
+
+            }
+            .order5{
+                order: 1;
+            }
+
+        
+
+        .item {
             height: 100px;
             width: 100px;
             border: 2px solid black;
             border-radius: 5px;
             margin: 5px;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgb(212, 203, 104);
         }
-
-
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class=" item item1">FlexBox1</div>
-        <div class=" item item2">FlexBox2</div>
-        <div class=" item item3">FlexBox3</div>
-        <div class=" item item4">FlexBox4</div>
-        <div class=" item item5">FlexBox5</div>
-        <div class=" item item5">FlexBox6</div>
+        <div class=" item item1 order1">FlexBox1</div>
+        <div class=" item item2 order2">FlexBox2</div>
+        <div class=" item item3 order3 ">FlexBox3</div>
+        <div class=" item item4 order4">FlexBox4</div>
+        <div class=" item item5 order5">FlexBox5</div>
+        <!-- <div class=" item item5">FlexBox6</div>
         <div class=" item item5">FlexBox7</div>
         <div class=" item item5">FlexBox8</div>
         <div class=" item item1">FlexBox9</div>
@@ -81,7 +132,8 @@
         <div class=" item item5">FlexBox13</div>
         <div class=" item item5">FlexBox14</div>
         <div class=" item item5">FlexBox15</div>
-        <div class=" item item5">FlexBox16</div>
+        <div class=" item item5">FlexBox16</div> -->
     </div>
 </body>
+
 </html>
