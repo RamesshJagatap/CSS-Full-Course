@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white ;
+            font-weight: bolder;
+            margin: 0;
+            padding: 0;
+        }
+        .layout{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-areas:"nav nav"
+                                "vnav maincontent"
+                                "footer footer"
+                                ;
+                                grid-template-columns: 1fr 4fr;
+                                row-gap: 10px;
+                                
+                               
+        }
+        .nav{
+            height: 10vh;
+            background-color: #cd7777;
+        }
+        .vnav{
+            height: 70vh;
+            background-color: rgb(165, 95, 95);
+        }
+        .maincontent{
+            height: 70vh;
+            background-color: rebeccapurple;
+        }
+        .footer{
+            height: 20vh;
+            background-color: #42adad;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="item nav">NavBar</div>
+        <div class="item nav"></div>
+        <div class="item vnav">Vertical NavBar</div>
+        <div class="item maincontent">MainContent</div>
+        <div class="item footer">Footer</div>
+        <div class="item footer"></div>
+    </div>
+</body>
+</html>
