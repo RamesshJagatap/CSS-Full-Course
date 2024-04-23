@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .Cheader{
+        text-align: center;
+        height: 10vh;
+        padding: 5px;
+    }
+    .hnav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        background-color: rgb(226, 237, 240);
+        height: 10vh;
+        box-shadow: inset;
+        padding: 15px 15px;
+
+    }
+    @media(max-width:375px){}
+    
+    .hnav a{
+        text-decoration: none;
+        color: black;
+    }
+    .hnav a:hover{  
+        color: rgb(10, 127, 228);
+        
+        
+    }
+    
+
+    /* discount-section */
+    .discount-section{
+        height: 15vh;
+        background-color: hsl(261, 37%, 85%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .dheader{
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+    /* middlesection */
+    .middle-section{
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .middle-section img{
+        height: 50vh;
+        width: 100vw;
+        position:relative;   
+    }
+    .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color */
+  
+}
+
+
+    /* footer-section */
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        background-color:#cfc5e2;
+        padding:10px;
+        
+    }
+    .searchbar{
+        background-color: white;
+        border-radius: 5px;
+    }
+    .inputtext{
+        border: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Cheader"><h2>Shop On OWNIT</h2></div>
+        <div class="hnav">
+            <div class="navitem"><a href="#">Women</a></div>
+            <div class="navitem"><a href="men.html">Men</a></div>
+            <div class="navitem"><a href="#">Kid&Baby</a></div>
+            <div class="navitem"><a href="#">Home</a></div>
+            <div class="navitem"><a href="#">Shoes</a></div>
+            <div class="searchbar"><i class="fa-solid fa-magnifying-glass "></i><input type="text" placeholder="Search Articles" class="inputtext"></div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+
+        <div class="discount-section">
+            <div class="dheader">Extra 30% off</div>
+            <div class="dpara">Extra 25% Off On Selected Items.Excludes Special 3. CODE-OWNIT</div>
+        </div>
+    
+
+    <div class="middle-section">
+        <img src="Screenshot 2024-04-22 090745.png" alt="middle image">
+        <div class="text-overlay">
+            <h2>Hello, World!</h2>
+            <p>Enter The World Of Ownit.</p>
+          </div>
+    </div>
+
+
+    <div class="footer-section">
+
+        <ul>
+            <h4>ABOUT</h4>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Career</li>
+            
+        </ul>
+        <ul>
+            <h4>Help</h4>
+            <li>Payement</li>
+            <li>Shopping</li>
+            <li>Cancellation</li>
+        </ul>
+        <ul>
+            <h4>GROUP AND COMPANIES</h4>
+            <li>Flipkart</li>
+            <li>Amazon</li>
+            <li>Ebay</li>
+           
+        </ul>
+        
+    </div> 
+        <!-- <div class="vnav">
+            <div class="vnavitem"><a href="#">Link</a></div>
+            <div class="vnavitem"><a href="#">Link</a></div>
+            <div class="vnavitem"><a href="#">Link</a></div>
+            <div class="vnavitem"><a href="#">Link</a></div>
+            <div class="vnavitem"><a href="#">Link</a></div>
+        </div>
+    </div>
+</body>
+</html>

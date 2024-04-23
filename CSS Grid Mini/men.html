@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Cheader {
+            text-align: center;
+            height: 10vh;
+            padding: 5px;
+        }
+
+        .hnav {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            background-color: rgb(226, 237, 240);
+            height: 10vh;
+            box-shadow: inset;
+            padding: 15px 15px;
+
+        }
+
+        .hnav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .hnav a:hover {
+            color: rgb(10, 127, 228);
+        }
+
+        .item {
+            height: 320px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            padding: 10px;
+            grid-template-columns: 1fr;
+
+        }
+
+        @media(min-width:0px)and (max-width:375px) {
+            .main-section {
+                display: grid;
+                grid-template-columns: 1fr;
+                background-color: rgb(179, 209, 115);
+                height: 1000px;
+                width: 100%;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            .funitem{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media(min-width:376px)and (max-width:700px) {
+            .main-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: rgb(179, 209, 115);
+                height: 1000px;
+                width: 100%;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            .funitem{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media(min-width:701px)and (max-width:1200px) {
+            .main-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: rgb(165, 177, 163);
+                height: 1000px;
+                width: 100%;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+           
+        }
+
+        @media(min-width:1201px) {
+            .main-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-color: rgb(177, 187, 189);
+                height: 1000px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+
+        .itemcontainer {
+            /* display: flex; */
+            /* flex-direction: column; */
+            justify-content: center;
+        }
+
+        .itemcontainer img {
+            width: 60%;
+            border-radius: 10px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #cfc5e2;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Cheader">
+            <h2>Shop On OWNIT</h2>
+        </div>
+        <div class="hnav">
+            <div class="navitem"><a href="#">Women</a></div>
+            <div class="navitem"><a href="men.html">Men</a></div>
+            <div class="navitem"><a href="#">Kid&Baby</a></div>
+            <div class="navitem"><a href="#">Home</a></div>
+            <div class="navitem"><a href="#">Shoes</a></div>
+            <div class="searchbar"><i class="fa-solid fa-magnifying-glass"></i><input type="text"
+                    placeholder="Search Articles"></div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+        </div>
+        <div class="main-section">
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                        <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)s</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br>Price:500Rs</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemcontainer">
+                    <div class="itemimage"><img
+                            src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/6/p/8/-original-imagzccmnhscthc8.jpeg?q=70"
+                            alt=""></div>
+                    <div class="imagecontent">Men TShirt <br><i class="fa-solid fa-indian-rupee-sign"></i>5000/- <del>7000</del>(30%Off)</div>
+                    <div class="funitem"><button>BuyNOw</button> <button>Add To Cart</button></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+
+            <ul>
+                <h4>ABOUT</h4>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Career</li>
+
+            </ul>
+            <ul>
+                <h4>Help</h4>
+                <li>Payement</li>
+                <li>Shopping</li>
+                <li>Cancellation</li>
+            </ul>
+            <ul>
+                <h4>GROUP AND COMPANIES</h4>
+                <li>Flipkart</li>
+                <li>Amazon</li>
+                <li>Ebay</li>
+
+            </ul>
+</body>
+
+</html>
